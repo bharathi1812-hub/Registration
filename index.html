@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <form class="card" onsubmit="register(event)">
+        <h2>Create Account</h2>
+        <p class="subtitle">Register to continue</p>
+
+        <div class="field">
+            <input type="text" id="username" required>
+            <label>Username</label>
+            <small class="error" id="userError"></small>
+        </div>
+
+        <div class="field">
+            <input type="password" id="password" required>
+            <label>Password</label>
+            <small class="error" id="passError"></small>
+        </div>
+
+        <button id="btn" type="submit">Register</button>
+
+        <p id="msg" class="msg"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
